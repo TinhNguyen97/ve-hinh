@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hình chữ nhật</title>
+</head>
+<body>
+<script>
+    let table = '<table >'
+    for (i = 0; i < 10; i++) {
+        table = table + '<tr>'
+        if (i == 0 || i == 9) {
+            for (j = 0; j < 25; j++) {
+                table = table + '<td>' + '*' + '</td>'
+            }
+        }
+        else{
+            table+='<td>*</td>'
+            for(j=1;j<24;j++)
+            {
+                table=table+'<td></td>'
+            }
+            table+='<td>*</td>'
+        }
+        table = table + '</tr>'
+    }
+    table = table + '</table>'
+    document.write(table)
+
+
+</script>
+</body>
+</html>
