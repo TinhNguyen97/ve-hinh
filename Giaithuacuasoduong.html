@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa của số dương</title>
+</head>
+<body>
+<input placeholder="Nhập số nguyen dương" id="index" type="number">
+<button onclick="Tinhgiaithua()">Tính giai thừa</button>
+<h3 id="ketqua"></h3>
+<script>
+    function Tinhgiaithua() {
+        let index = parseInt(document.getElementById('index').value)
+        let i = 1
+        let ketqua = 1
+        for (i = 1; i <= index; i++) {
+            ketqua = ketqua * i
+        }
+        document.getElementById('ketqua').innerHTML = 'Giai thừa của ' + ketqua + ' ' + 'là:' + ' ' + ketqua
+    }
+</script>
+</body>
+</html>
